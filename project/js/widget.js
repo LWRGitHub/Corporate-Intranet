@@ -1,9 +1,5 @@
 var scheduling = document.getElementById('scheduling');
 
-scheduling.addEventListener("click", function(){
-  alert("Please enter User name & password");
-});
-
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
   if(xhr.readyState === 4 && xhr.status === 200) {
@@ -45,4 +41,8 @@ xhr2.onreadystatechange = function () {
 };
 xhr2.open('GET', '../data/rooms.json');
 xhr2.send();
+
+scheduling.addEventListener("click", function(){
+  alert("This is where managers schedule a meeting room and enter if the employee is in or out. A manager can simply enter their username & password to login.\n\n   User: Username\n   Password: Password");
+});
 

@@ -5,7 +5,7 @@
   <title>AJAX Office Status Widget</title>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/widget.js"></script>
+  <script src="js/widget.js" async></script>
 </head>
 <body>
   <div class="grid-container centered">
@@ -15,7 +15,7 @@
           <div class="heading">
             <h1>Corporate Intranet</h1>
             <nav>
-              <button id="scheduling">Scheduling/Employee Status</button>
+              <button id="scheduling" onclick="window.location.href = 'scheduling.html';">Scheduling/Employee Status</button>
             </nav>
           </div>
         </div>
